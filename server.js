@@ -46,6 +46,6 @@ app.get('/api/popups/:popupSpecial', (request, response)=>{
     response.json(popups[popupSpecial])
 })
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
     console.log(`POPUPAPI SAYS HI ${PORT}`)
 })
